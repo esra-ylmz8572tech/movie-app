@@ -1,16 +1,24 @@
-# React + Vite
+# 🎬 Movie Explorer (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Bu proje, React ve Vite kullanılarak geliştirilmiş modern bir film rehberi uygulamasıdır. Veriler TMDB API kullanılarak dinamik olarak çekilmektedir.
 
-Currently, two official plugins are available:
+## 🚀 Özellikler
+- TMDB API ile popüler filmleri listeleme ve anlık arama
+- Kategoriye ve puana göre filtreleme/sıralama
+- Film detay sayfası (React Router DOM)
+- Sayfalama (Pagination) ile veri getirme
+- Kullanıcı giriş ve kayıt işlemleri (JWT entegrasyonu)
+- Favori filmleri veritabanına kaydetme ve yönetme
+- Modern, karanlık tema (Dark Mode) odaklı responsive UI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Kullanılan Teknolojiler
+- React.js (Vite)
+- Axios (API İstekleri)
+- React Router DOM (Sayfa Yönlendirme)
+- CSS3 (Tasarım)
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## ⚙️ Kurulum
+1. Projeyi bilgisayarınıza indirin veya klonlayın.
+2. Klasörün içinde terminal açarak gerekli paketleri yükleyin: `npm install`
+3. `src/Home.jsx` ve `src/MovieDetail.jsx` içindeki `API_KEY` alanlarına kendi TMDB API anahtarınızı ekleyin.
+4. Geliştirme sunucusunu başlatın: `npm run dev`
